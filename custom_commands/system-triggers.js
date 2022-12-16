@@ -53,9 +53,9 @@ exports.getAll = function() {
 exports.getCmdListDescription = function(res){
   commandArray = cmdArr;
   if (commandArray) {
-    var listing = res;
-    callback(true, listing, []);
-  return listing;
+    var msg = res;
+    callback(true, msg, []);
+  return msg;
     }
 }
 
