@@ -1,0 +1,53 @@
+{
+  "name": "groupme-bot",
+  "version": "0.0.1",
+  "description": "A bot made for groupme",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "concat": "^1.0.3",
+    "cron": "^1.7.2",
+    "director": "^1.2.8",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.5.1",
+    "file-match": "^1.0.2",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
+    "gmail-send": "^1.8.10",
+    "googleapis": "^43.0.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^2.1.0",
+    "jsinspect": "^0.12.7",
+    "lib": "^4.0.5",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.1",
+    "moment": "^2.24.0",
+    "mongodb": "^2.2.36",
+    "nodemailer": "^6.3.0",
+    "nps": "^5.9.8",
+    "nps-utils": "^1.7.0",
+    "utils-extend": "^1.0.8"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstlmike/email.git"
+  },
+  "keywords": [
+    "node",
+    "groupme"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dstlmike/email/issues"
+  },
+  "homepage": "https://github.com/dstlmike/email#readme",
+  "devDependencies": {},
+  "author": ""
+}
