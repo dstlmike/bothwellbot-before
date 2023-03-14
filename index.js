@@ -12,6 +12,11 @@ router = new director.http.Router({
   '/'    : {
     get: ping
   },
+  '/tiago'    : {
+
+    get: tiago
+
+  },
   '/init' : {
     get:  bot.init,
     post: bot.init
@@ -47,4 +52,12 @@ server.listen(port, ip);
 function ping() {
   this.res.writeHead(200);
   this.res.end("I am a robot.");
+}
+
+function tiago() {
+
+  this.res.writeHead(200);
+
+  this.res.end("");
+
 }
