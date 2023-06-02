@@ -1,6 +1,6 @@
 #!/bin/env node
 
-var nodemailer = require('nodemailer');
+//var nodemailer = require('nodemailer');
 
 var http, director, bot, router, server, port, db;
 
