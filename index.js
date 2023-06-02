@@ -47,9 +47,9 @@ server = http.createServer(function (req, res) {
 port = Number(process.env.NODEJS_SERVICE_PORT || process.env.PORT || 8080);
 ip = process.env.IP || "0.0.0.0" || process.env.NODEJS_SERVICE_PORT;
 
-server.listen(port, ip);
+//server.listen(port, ip);
 //console.log(port + " " + ip);
-/*server.listen(port, ip, function(req, res) {
+server.listen(port, function(req, res) {
 
   console.log('Server started on port: ' + port +  ' ip: ' + ip);
 
