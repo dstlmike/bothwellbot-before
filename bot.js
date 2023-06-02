@@ -107,7 +107,7 @@ function postMessage(botResponse, attachments, botID) {
     if (res.statusCode == 200 || res.statusCode == 202) {
      //  neat
     } else {
-       console.log(res.err); //'rejecting bad status code ' + res.statusCode);
+       console.log(res.errorMessage); //'rejecting bad status code ' + res.statusCode);
      }
   });
 
