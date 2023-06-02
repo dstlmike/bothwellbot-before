@@ -7,7 +7,7 @@ var mods         = require('./modules/mods.js');
 var commandList  = require('./modules/command-list.js');
 var list = require('./modules/list.js');
 var rooms        = require('./modules/rooms.js');
-var concat       = require('concat');
+var concat       = require('concat-map');
 
 //commands with custom actions
 var userCmds     = require('./custom_commands/user-commands.js');
