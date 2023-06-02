@@ -54,7 +54,7 @@ server.listen(port, function(req, res) {
   console.log('Server started on port: ' + port +  ' ip: ' + ip);
 
 });
-*/
+
 function ping() {
   this.res.writeHead(200);
   this.res.end("I am a robot.");
