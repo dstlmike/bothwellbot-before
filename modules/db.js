@@ -40,7 +40,7 @@ if(process.env.MONGODB_PASSWORD){
 
 
 function connect(callback){
-  mongoDB.connect(connection_string, function(err, db) {
+  dbt.connect(connection_string, function(err, db) {
     if(err) throw err;
     callback(db);
   });
