@@ -8,6 +8,12 @@ var commandList  = require('./modules/command-list.js');
 var list = require('./modules/list.js');
 var rooms        = require('./modules/rooms.js');
 var concat       = require('concat-map');
+var mongoose = require('mongoose');
+
+var connection_string = 'mongodb://alexbot:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/marketbotai?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
+var dbt = mongoose.connection;
+
+mongoose.connect(connection_string, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //commands with custom actions
 var userCmds     = require('./custom_commands/user-commands.js');
