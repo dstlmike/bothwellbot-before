@@ -1,6 +1,5 @@
 var mongoDB     = require('mongodb').MongoClient;
 var db = require('mongodb').Db
-var mongoose = require('mongoose');
 
 var connection_string = 'mongodb://alexbot:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/marketbotai?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
 
@@ -40,7 +39,7 @@ if(process.env.MONGODB_PASSWORD){
 
 
 function connect(callback){
-  dbt.connect(connection_string, function(err, db) {
+  mongoDB.connect(connection_string, function(err, db) {
     if(err) throw err;
     callback(db);
   });
