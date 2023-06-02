@@ -39,7 +39,7 @@ if(process.env.MONGODB_PASSWORD){
 
 
 function connect(callback){
-  mongoDB.connect(connection_string, function(err, db) {
+  mongoDB.connect(connection_string, useNewUrlParser: true, useUnifiedTopology: true, function(err, db) {
     if(err) throw err;
     callback(db);
   });
