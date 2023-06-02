@@ -1,11 +1,11 @@
 var mongoDB     = require('mongodb').MongoClient;
 var db = require('mongodb').Db
 
-var connection_string = 'mongodb://alexbot:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/marketbotai?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
+var connection_string = 'mongodb://alexbot:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/bothwellbot?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
 
-var dbt = mongoose.connection;
+//var dbt = mongoose.connection;
 
-mongoose.connect(connection_string, { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect(connection_string, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 //var connection_string = 'mongodb+srv://alexbot:308boonave@cluster0.esmha.mongodb.net/sampledb?retryWrites=true&w=majority'; // 'mongodb://dstl%5Fmike1%40hotmail%2Ecom:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
