@@ -49,7 +49,7 @@ ip = process.env.IP || "0.0.0.0";
 
 //server.listen(port, ip);
 //console.log(port + " " + ip);
-server.listen(port, function(req, res) {
+server.listen(port, ip, function(req, res) {
 
   console.log('Server started on port: ' + port +  ' ip: ' + ip);
 
