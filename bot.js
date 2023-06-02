@@ -9,9 +9,6 @@ var list = require('./modules/list.js');
 var rooms        = require('./modules/rooms.js');
 var concat       = require('concat-map');
 
-var connection_string = 'mongodb://alexbot:308boonave@cluster0-shard-00-00-esmha.mongodb.net:27017,cluster0-shard-00-01-esmha.mongodb.net:27017,cluster0-shard-00-02-esmha.mongodb.net:27017/marketbotai?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
-
-
 //commands with custom actions
 var userCmds     = require('./custom_commands/user-commands.js');
 var userMentions = require('./custom_commands/user-mentions.js');
