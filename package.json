@@ -32,7 +32,7 @@
     "utils-extend": "^1.0.8"
   },
   "engines": {
-    "node": "0.10.0",
+    "node": "10.24.1",
     "npm": "= 1.0.0"
   },
   "repository": {
