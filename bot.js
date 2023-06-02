@@ -104,11 +104,11 @@ function postMessage(botResponse, attachments, botID) {
   console.log('sending ' + botResponse + ' to ' + botID);
 
   botReq = HTTPS.request(options, function(res) {
-    if (res.statusCode == 200 || res.statusCode == 202) {
+//    if (res.statusCode == 200 || res.statusCode == 202) {
      //  neat
-    } else {
-       console.log(res.errorMessage); //'rejecting bad status code ' + res.statusCode);
-     }
+ //   } else {
+       console.log(res); //'rejecting bad status code ' + res.statusCode);
+//     }
   });
 
   botReq.on('error', function(err) {
